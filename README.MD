@@ -1,27 +1,41 @@
-## Proyecto de Aprendizaje de Máquina Supervisado
 
-### Contexto
-El proyecto utiliza datos de procedimientos policiales de la policía de Nueva York en los años 2009 y 2010. Estos conjuntos de datos proporcionan información sobre los procedimientos policiales realizados durante esos años, incluida la variable objetivo 'arstmade', que indica si un procedimiento resultó en un arresto o no.
+---
 
-### Objetivo
-El objetivo del proyecto es desarrollar un modelo predictivo utilizando técnicas de aprendizaje de máquina supervisado implementadas en Python. El modelo utilizará diversas características de los procedimientos policiales para predecir si un futuro procedimiento resultará en un arresto.
+# Predicción de Arrestos en Policías de Nueva York
 
-### Tareas del Proyecto
-1. **Exploración de Datos**: Cargar y explorar los conjuntos de datos de 2009 y 2010, entender la estructura de los datos, identificar las variables relevantes y comprender la variable objetivo 'arstmade'.
+Este proyecto utiliza técnicas de aprendizaje de máquina supervisado para predecir si un procedimiento policial en Nueva York terminará en un arresto o no. Los datos utilizados son del año 2009 y 2010 y provienen de la policía de Nueva York.
 
-2. **Preprocesamiento de Datos**: Realizar limpieza de datos, manejar valores faltantes, transformar variables categóricas, crear nuevas características relevantes y filtrar el conjunto de datos según los requisitos del proyecto.
+## Contexto
 
-3. **Análisis Exploratorio de Datos**: Estudiar la relación entre la variable objetivo y otras características como género, raza, edad, entre otros. Identificar patrones y tendencias en los datos que puedan ser útiles para la construcción del modelo.
+Los datos provienen de los procedimientos policiales realizados en Nueva York en los años 2009 y 2010. La variable objetivo es 'arstmade', que indica si un procedimiento policial resultó en un arresto o no. El objetivo del proyecto es crear un modelo de aprendizaje automático que pueda predecir si un futuro procedimiento policial terminará en un arresto.
 
-4. **Modelado**: Entrenar y evaluar varios modelos de aprendizaje de máquina supervisado, como Regresión Logística, Árboles de Decisión, Bosques Aleatorios y Gradient Boosting, utilizando validación cruzada para ajustar los hiperparámetros y seleccionar el mejor modelo.
+## Estructura del Repositorio
 
-5. **Evaluación del Modelo**: Evaluar el rendimiento del modelo final utilizando métricas de evaluación adecuadas, como precisión, recall, F1-score y matriz de confusión.
+- **data**: Carpeta que contiene los archivos CSV con los datos de 2009 y 2010.
+- **notebooks**: Carpeta que contiene los notebooks Jupyter utilizados para el análisis y modelado.
+- **README.md**: Este archivo, que proporciona una descripción general del proyecto.
 
-6. **Conclusiones y Recomendaciones**: Resumir los hallazgos del proyecto, discutir las implicaciones éticas y prácticas del modelo desarrollado y sugerir posibles áreas de mejora o investigación futura.
+## Notebooks
 
-### Bibliotecas Utilizadas
-- Pandas: Para la manipulación y análisis de datos.
-- NumPy: Para operaciones numéricas y cálculos.
-- Matplotlib y Seaborn: Para visualización de datos.
-- Scikit-learn: Para implementar algoritmos de aprendizaje de máquina supervisado y evaluar modelos.
-- Otros: Dependiendo de las necesidades específicas del proyecto, podrían utilizarse otras bibliotecas como TensorFlow, Keras, XGBoost, entre otras.
+- **01_Exploración_y_Preprocesamiento.ipynb**: Notebook que contiene la exploración inicial de los datos y el preprocesamiento necesario para el modelado.
+- **02_Modelado.ipynb**: Notebook que contiene la construcción y evaluación de los modelos de aprendizaje automático.
+
+## Dependencias
+
+- Python 3.x
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+## Uso
+
+Para ejecutar los notebooks, se recomienda clonar este repositorio y abrir los notebooks utilizando Jupyter Notebook.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si desea contribuir al proyecto, por favor abra un issue o envíe un pull request.
+
+---
